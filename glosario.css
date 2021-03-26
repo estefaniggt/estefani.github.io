@@ -1,0 +1,135 @@
+*{margin: 0; padding: 0;}
+
+
+body{
+    background-image: url("fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    overflow:hidden;
+    background: #40394a;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow:hidden;
+}
+
+header .logo{
+    color: #a6f0c6;
+    font-size: 50px;
+    font-family: 'Rokkitt', serif;
+    line-height: 200px;
+    float: left;
+}
+
+header nav{
+    float: right;
+    line-height: 200px;
+}
+
+header nav a{
+    display: inline-block;
+    color: #a0c1b8;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+header nav a:hover{
+    background: #025955;
+    border-radius: 50px;
+}
+
+.header2{
+    position: fixed;
+    height: 100px;
+}
+
+.header2 .logo{
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.header2 nav{
+    line-height: 100px;
+}
+
+.one{
+    width: 800px; /* (modificar el ancho) */
+    height: 240px; /*( modificar el alto )*/
+    background: #dff3e3;
+    margin: 20px 200px; /* el primero es margen arriba y abajo, el segundo es a los lados */
+    padding: 10px; /* margen interno */
+    /* los cositos en inline no se les puede modificar ni el alto ni el ancho */
+    border: 10px solid #025955;
+    /*display: inline-block;  (ayuda a posicionarlo uno al lado del otro) */
+    text-align: center;
+    border-radius: 20px;
+}
+
+h1{
+    color: #dff3e3;
+    font-family: 'Rokkitt', serif;
+    text-align: center;
+    background: rgb(1, 97, 97);
+}
+
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+button{
+    margin: 3px 10px 15px 10px;
+    color: white;
+    background: black;
+    font-weight: bold;
+    padding: 3px;
+}
+
+img{
+    margin: 50px 200px;
+    border-radius: 300px;
+    -webkit-transition: 20s linear;
+    transition: 20s linear;
+}
+
+footer{
+    padding: 20px;
+    color: #a6f0c6;
+    background: #40394a;
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+    text-align: center;
+}
+@media screen and (max-width: 925px) {
+    header .logo,
+     header nav{   
+      width: 100%;
+     text-align: center;
+     line-height: 100px;   
+    }
+ 
+    .header2{
+        height: auto;
+    }
+ 
+    .header2 .logo, .header2 nav{
+        line-height: 50px;
+    }
+ 
+ }

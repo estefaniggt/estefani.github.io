@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRING</title>
+    <link rel="stylesheet" href="glosario.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Rokkitt:wght@500;900&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+         <div class="logo">
+                 JavaScript
+         </div>
+         <nav>
+            <a href="glosario0.html">INICIO</a>
+            <a href="glosario1.html">MATH</a>
+            <a href="glosario2.html">ARRAY</a>
+            <a href="glosario3.html">STRING</a> 
+         </nav>
+         
+     </div>
+     </header>
+ 
+     <h1>FUNCIONES STRING</h1>
+
+    <div class="one">
+        <h2>substr()</h2>
+        <br>
+           <p>El método substr () extrae partes de una cadena, comenzando en el carácter en la posición especificada, y devuelve el número especificado de caracteres.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para extraer partes de la cadena.</p>
+           <br>
+        
+        <button onclick="sub()">Presioname</button>
+        <p id="sub"></p>
+
+        <script>
+            function sub() {
+              var str = "Feliz dia";
+              var res = str.substr(1, 7);
+              document.getElementById("sub").innerHTML = res;
+            }
+        </script>
+    </div>
+
+    <div class="one">
+        <h2>trim()</h2>
+        <br>
+           <p>El método trim () elimina los espacios en blanco de ambos lados de una cadena.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para alertar a la cadena con espacios en blanco eliminados.</p>
+           <br>
+        
+        <button onclick="tr()">Presioname</button>
+        <p id="tr"></p>
+
+        <script>
+            function tr() {
+              var str = "     ~~Bienvenidos a mi pagina~~    ";
+              alert(str.trim());
+            }
+        </script>
+    </div>
+
+    <div class="one">
+        <h2>valueOf()</h2>
+        <br>
+           <p>El método valueOf () devuelve el valor primitivo de un objeto String.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para devolver el valor primitivo del objeto de cadena.</p>
+           <br>
+        
+        <button onclick="of()">Presioname</button>
+        <p id="of"></p>
+
+        <script>
+            function of() {
+              var str = "El tiempo de dios es perfecto";
+              var res = str.valueOf();
+              document.getElementById("of").innerHTML = res;
+            }
+        </script>
+    </div>
+
+    <div class="one">
+        <h2>length</h2>
+        <br>
+           <p>La propiedad de length devuelve la longitud de una cadena (número de caracteres).</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para devolver el número de caracteres de la cadena "La musica es vida"</p>
+           <br>
+        
+        <button onclick="len()">Presioname</button>
+        <p id="len"></p>
+
+        <script>
+            function len() {
+              var str = "La musica es vida";
+              var n = str.length;
+              document.getElementById("len").innerHTML = n;
+            }
+        </script>
+    </div>
+
+    <div class="one">
+        <h2>replace()</h2>
+        <br>
+           <p>El método replace () busca en una cadena un valor especificado, o una expresión regular , y devuelve una nueva cadena donde se reemplazan los valores especificados.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para reemplazar "Youtube" con "mi pagina de JavaScript" en el párrafo siguiente</p>
+           <br>
+        
+        <button onclick="re()">Presioname</button>
+        <p id="re">~Ingresa a Youtube~</p>
+
+        <script>
+            function re() {
+              var str = document.getElementById("re").innerHTML; 
+              var res = str.replace("Youtube", "mi pagina de JavaScript ");
+              document.getElementById("re").innerHTML = res;
+            }
+        </script>
+    </div>
+
+    <footer>
+        <p>Creado por: Estefani Garcia | Carrera: Informatica - 5to Semestre | Correo: estefanigabri@gmail.com</p>
+    </footer>
+
+</body>
+</html>

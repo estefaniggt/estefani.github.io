@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>MATH</title>
+    <link rel="stylesheet" href="glosario.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Rokkitt:wght@500;900&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+         <div class="logo">
+                 JavaScript
+         </div>
+         <nav>
+            <a href="glosario0.html">INICIO</a>
+            <a href="glosario1.html">MATH</a>
+            <a href="glosario2.html">ARRAY</a>
+            <a href="glosario3.html">STRING</a>           
+         </nav>
+         
+     </div>
+     </header>
+ 
+    <h1> FUNCIONES MATEMATICAS </h1>
+
+    <div class="one">
+        <h2>abs()</h2>
+        <br>
+           <p>Devuelve el valor absoluto de un número.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para mostrar el valor absoluto de -131.99</p>
+           <br>
+        
+        <button onclick="myFunction()">Presioname</button>
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = Math.abs(-131.99);
+            }
+        </script>
+    </div>
+
+    <div class="one">
+        <h2>acos()</h2>
+        <br>
+           <p>El método acos() devuelve el arcocoseno de un número como un valor entre 0 y PI radianes.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para mostrar el arcocoseno de 0.5</p>
+           <br>
+
+        <button onclick="arcoseno()">Presioname</button>
+        <p id="pony"></p>
+
+        <script>
+        function arcoseno() {
+            document.getElementById("pony").innerHTML = Math.acos(0.5);
+            }
+        </script>
+    </div>
+
+    <div class="one">
+        <h2>acosh()</h2>
+        <br>
+           <p>El método acosh() devuelve el arcocoseno hiperbólico de un número.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para mostrar el arcocoseno hiperbólico de 3</p>
+           <br>
+
+        <button onclick="arch()">Presioname</button>
+        <p id="acosh"></p>
+
+        <script>
+        function arch() {
+            document.getElementById("acosh").innerHTML = Math.acosh(3);
+            }
+        </script>
+    </div>
+
+    <div class="one">
+        <h2>asin()</h2>
+        <br>
+           <p>El método asin () devuelve el arcoseno de un número como un valor entre -PI / 2 y PI / 2 radianes.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para mostrar el arcoseno de 2</p>
+           <br>
+
+        <button onclick="asin()">Presioname</button>
+
+        <p id="asin"></p>
+
+        <script>
+        function asin() {
+            document.getElementById("asin").innerHTML = Math.asin(2);
+            }
+        </script>
+    </div>
+
+    <div class="one">
+        <h2>pow()</h2>
+        <br>
+           <p>El método pow () devuelve el valor de x elevado a la potencia de y.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para mostrar la potencia de 4 elevado a la 3</p>
+           <br>
+
+        <button onclick="pow()">Presioname</button>
+        <p id="pow"></p>
+        <br>
+
+        <script>
+        function pow() {
+            document.getElementById("pow").innerHTML = Math.pow(4, 3);
+            }
+        </script>
+    </div>
+
+    <footer>
+        <p>Creado por: Estefani Garcia | Carrera: Informatica - 5to Semestre | Correo: estefanigabri@gmail.com</p>
+    </footer>
+
+</body>
+</html>

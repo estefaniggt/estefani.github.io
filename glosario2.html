@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+    <link rel="stylesheet" href="glosario.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Rokkitt:wght@500;900&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+         <div class="logo">
+                 JavaScript
+         </div>
+         <nav>
+            <a href="glosario0.html">INICIO</a>
+            <a href="glosario1.html">MATH</a>
+            <a href="glosario2.html">ARRAY</a>
+            <a href="glosario3.html">STRING</a>        
+         </nav>
+     </div>
+     </header>
+
+     <h1> FUNCIONES ARRAY </h1>
+
+     <div class="one">
+         <h2>every()</h2>
+         <br>
+            <p>El método every () comprueba si todos los elementos de una matriz pasan una prueba (proporcionada como función).</p>
+            <br>
+            <hr>
+            <br>
+            <p>Presione para comprobar si cada elemento de la matriz tiene un valor de 20 o más.</p>
+            <br>
+         
+         <button onclick="eve()">Presioname</button>
+         <p id="eve"></p>
+ 
+         <script>
+             var ages = [21, 22, 12, 28]
+             
+             function adult(age){
+                 return age >= 20;
+             }
+             function eve() {
+             document.getElementById("eve").innerHTML = ages.every(adult);
+             }
+         </script>
+     </div>
+
+     <div class="one">
+        <h2>fill()</h2>
+        <br>
+           <p>El método fill () llena los elementos especificados en una matriz con un valor estático.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para llenar todos los elementos de la matriz con el valor "Venezuela".</p>
+           <br>
+
+        <button onclick="fi()">Presioname</button>
+        <p id="fi"></p>
+
+        <script>   
+        var pais = ["España", " Alemania", " Corea", " Portugal"];
+        document.getElementById("fi").innerHTML = pais;
+        
+        function fi() {  
+        document.getElementById("fi").innerHTML = pais.fill("Venezuela");
+        }
+        </script>
+    </div>
+
+    
+    <div class="one">
+        <h2>isArray()</h2>
+        <br>
+           <p>El método isArray () determina si un objeto es una matriz.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para comprobar si "frutas" es una matriz.</p>
+           <br>
+
+           <button onclick="is()">Presioname</button>
+
+           <p id="is"></p>
+           
+           <script>
+           function is() {
+             var fruits = ["Guanabana", "Piña", "Pera", "Mandarina"];
+             var x = document.getElementById("is");
+             x.innerHTML = Array.isArray(fruits);
+           }
+           </script>
+    </div>
+
+    <div class="one">
+        <h2>pop()</h2>
+        <br>
+           <p>El método pop () elimina el último elemento de una matriz y devuelve ese elemento.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para eliminar el último elemento de la matriz.</p>
+           <br>
+
+           <button onclick="dem()">Presioname</button>
+
+           <p id="dem"></p>
+           
+           <script>
+            var fruits = ["Cambur", " Naranja", " Manzana", " Mango"];
+            document.getElementById("dem").innerHTML = fruits;
+            
+            function dem() {
+              fruits.pop();
+              document.getElementById("dem").innerHTML = fruits;
+            }
+            </script>
+    </div>
+
+    <div class="one">
+        <h2>push()</h2>
+        <br>
+           <p>El método push () agrega nuevos elementos al final de una matriz y devuelve la nueva longitud.</p>
+           <br>
+           <hr>
+           <br>
+           <p>Presione para agregar un nuevo elemento a la matriz.</p>
+           <br>
+
+           <button onclick="sh()">Presioname</button>
+
+           <p id="sh"></p>
+           
+           <script>
+            var verduras = ["Lechuga", " Tomate", " Papa", " Cebolla"];
+            document.getElementById("sh").innerHTML = verduras;
+            
+            function sh() {
+              verduras.push(" Pimenton");
+              document.getElementById("sh").innerHTML = verduras;
+            }
+            </script>
+    </div>
+
+    <footer>
+        <p>Creado por: Estefani Garcia | Carrera: Informatica - 5to Semestre | Correo: estefanigabri@gmail.com</p>
+    </footer>
+</body>
+</html>
